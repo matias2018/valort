@@ -5921,4 +5921,32 @@ progress {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.no-rounded, .no-rounded * {
+  border-radius: 0 !important;
+}
+
+.dcontents {
+  display: contents;
+}
+
+.dcontents :nth-child(1) {
+  margin-bottom: 2px;
+}
+
+.dcontents * {
+  text-align: end;
+}
+
+.alignCenter {
+  align-items: center;
 }/*# sourceMappingURL=custom.css.map */
