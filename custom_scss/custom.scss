@@ -84,10 +84,35 @@ h1 {
   }
 }
 
-.bi.bi-twitter {
-  width: 50px;
-  height: auto;
-  background: red;
+.bi-social::before {
+  min-width: 50px !important;
+  font-size: 30px;
 }
 
-* {background: rgba(255, 0, 0, 0);}
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  padding-left: 0 !important;
+}
+
+.link-banner {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  background: #EBEBEB;
+
+  &--item {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 20px;
+  }
+  &--item:first-child {
+    margin: 0 20px 0 0;
+  }
+  &--item * {
+    text-decoration: none;
+    color: inherit;
+  }
+}
