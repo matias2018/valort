@@ -10,32 +10,49 @@
 			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="./css/custom.css" />
+		<link rel="stylesheet" href="./dist/css/custom.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="./js/main.js" defer></script>
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="row flex-row-reverse pt-3">
-				<form class="d-flex col-4">
-					<div class="input-group no-rounded">
-						<input
-							type="search"
-							class="form-control"
-							placeholder="Search"
-							aria-label="Search"
-							aria-describedby="search-addon"
-						/>
-						<span class="input-group-text border-0" id="search-addon">
-							<i class="fas fa-search"></i>
-						</span>
+		<div class="main-container container">
+			<!-- =============================== -->
+			<div class="container">
+				<div class="row flex-row-reverse">
+					<div class="col-md-4 mt-3">
+						<div class="input-group">
+							<input
+								class="form-control py-2 rounded-pill mr-1 pr-5"
+								type="search"
+								placeholder="pesquisa"
+								id="example-search-input"
+							/>
+							<span class="input-group-append">
+								<button class="btn rounded-pill border-0 ml-n5" type="button">
+									<i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
 					</div>
-				</form>
+				</div>
 			</div>
+			<!-- =============================== -->
+			<!-- <h1 class="fixed">&#8595;</h1> -->
+			<!-- Back to top button -->
+			<button
+				type="button"
+				class="btn bi bi-arrow-down btn-floating btn-lg"
+				id="btn-back-to-top"
+			>
+				<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+			</button>
+			<!-- =============================== -->
 
 			<div class="row pt-3">
 				<nav class="navbar navbar-expand-lg navbar-light">
@@ -123,6 +140,19 @@
 				<button type="button" class="btn btn-dark">Dark</button>
 				<button type="button" class="btn btn-link">Link</button>
 			</div>
+		</div>
+
+		<!-- Explanation -->
+		<div class="container mt-4 text-center" style="height: 2000px">
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+				voluptatibus quis reprehenderit quaerat libero quo commodi magni
+				praesentium quisquam vero ipsa voluptate quos nesciunt maxime, culpa
+				officia at reiciendis sint?
+				<strong>"Back to top" button </strong>
+			</p>
+
+			<p>Click this button n' you'll be taken to the top of the page.</p>
 		</div>
 
 		<script
